@@ -132,11 +132,11 @@ Merchant Creates Invoice → Customer Scans → Auto-filled Amount → Pay → D
 
 ### Deployed Contracts (Base Sepolia)
 
-| Contract             | Address | BaseScan                                           |
-| -------------------- | ------- | -------------------------------------------------- |
-| **MerchantRegistry** | `0x...` | [View](https://sepolia.basescan.org/address/0x...) |
-| **PaymentProcessor** | `0x...` | [View](https://sepolia.basescan.org/address/0x...) |
-| **MockIDRX**         | `0x...` | [View](https://sepolia.basescan.org/address/0x...) |
+| Contract             | Address                                      | BaseScan                                                                                |
+| -------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **MerchantRegistry** | `0x7f899bFFCF9CAfa9B3b781F2252db0620670Bd2c` | [View](https://sepolia.basescan.org/address/0x7f899bFFCF9CAfa9B3b781F2252db0620670Bd2c) |
+| **PaymentProcessor** | `0xae2536c18b809a5a4C7aC17432345CB99599D4A5` | [View](https://sepolia.basescan.org/address/0xae2536c18b809a5a4C7aC17432345CB99599D4A5) |
+| **MockIDRX**         | `0x7d65594A92F54b1aa72cf5d46cB7893b991FDDE5` | [View](https://sepolia.basescan.org/address/0x7d65594A92F54b1aa72cf5d46cB7893b991FDDE5) |
 
 > ⚠️ **Note**: Replace these with your actual deployed addresses
 
