@@ -1,7 +1,12 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import { WalletButton } from "./WalletButton";
+
+const WalletButton = dynamic(() => import("./WalletButton").then(mod => ({ default: mod.WalletButton })), {
+  ssr: false,
+  loading: () => <div className="h-10 w-32 bg-gray-200 animate-pulse rounded-lg" />,
+});
 
 export function Navbar() {
   return (
