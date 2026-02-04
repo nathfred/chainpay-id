@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { QRCodeDisplay } from "@/components/QRCodeDisplay";
+import { Soundbox } from "@/components/Soundbox";
 import { MERCHANT_REGISTRY_ABI } from "@/contracts/abis";
 import { CONTRACTS, formatIDRX } from "@/contracts/config";
 import { useAccount, useReadContract } from "wagmi";
@@ -87,6 +88,9 @@ export default function MerchantDashboard() {
             <h2 className="text-xl font-semibold mb-4">Your Payment QR Code</h2>
             <p className="text-gray-600 mb-6">Display this QR code at your checkout for customers to scan and pay</p>
             <QRCodeDisplay merchantAddress={address!} />
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <Soundbox merchantAddress={address!} />
+            </div>
           </div>
 
           <div className="space-y-4">
