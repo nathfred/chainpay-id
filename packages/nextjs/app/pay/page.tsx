@@ -1,5 +1,6 @@
 "use client";
 
+import { IDRXFaucet } from "@/components/IDRXFaucet";
 import { QRScanner } from "@/components/QRScanner";
 
 export default function PayPage() {
@@ -11,6 +12,10 @@ export default function PayPage() {
           <p className="text-gray-600 mb-8">Scan merchant QR code to make a payment</p>
 
           <QRScanner />
+
+          <div className="mt-6">
+            <IDRXFaucet />
+          </div>
 
           <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-4">
             <h3 className="font-semibold text-blue-900 mb-2">How it works:</h3>
